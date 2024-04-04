@@ -1,0 +1,30 @@
+.wrapper {
+  min-height: 100vh; /* good for mobile */
+  padding: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none; /* remove underline */
+  color: purple;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

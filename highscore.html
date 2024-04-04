@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Scores</title>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      function clearHighscores() {
+        window.localStorage.clear(); /* change this to clear high scores array that has initials and related score*/
+        document.getElementById("highscores").innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Highscores</h1>
+    <div class="wrapper">
+      <div class="inner">
+        <ul id="highscores">
+          <!-- high scores will be inserted here in a for loop -->
+          <li>1. Initials - Score</li>
+          /* example */
+        </ul>
+        <button onclick="goBack()">Go Back</button>
+        <button onclick="clearHighscores()">Clear Highscores</button>
+      </div>
+    </div>
+  </body>
+</html>
